@@ -173,7 +173,7 @@ const SERVICE_PORT = process.env.SERVICE_PORT ? process.env.SERVICE_PORT : 8080;
 const server = app.listen(SERVICE_PORT, () => {
     const host = server.address().address;
     const port = server.address().port;
-
+    console.log(`Events app listening `);
     console.log(`Events app listening at http://${host}:${port}`);
 });
 
